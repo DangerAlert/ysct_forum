@@ -9,8 +9,9 @@
 
 课程购买地址：https://www.bilibili.com/cheese/play/ss10688
 
-[课程封面](./head.assets/课程封面.png)
-
+.. image:: ./head/head.assets/课程封面.png
+   :scale: 40%
+   :align: center
 
 .. toctree::
    :maxdepth: 3
@@ -28,4 +29,4 @@
    :maxdepth: 3
    :caption: 课程权益兑换
 
-   course/course.md
+   rights/rights.md

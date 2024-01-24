@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = '长天机器学习平台介绍文档'
+project = '逸思长天机器学习常见问题文档'
 copyright = '2023, liyifan'
 author = 'liyifan'
 release = '1.0.0'
