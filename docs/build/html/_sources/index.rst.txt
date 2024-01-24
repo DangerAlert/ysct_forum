@@ -30,3 +30,7 @@
    :caption: 课程权益兑换
 
    rights/rights.md
+
+.. image::  /img/次卡领取.png
+   :scale: 40%
+   :align: center
