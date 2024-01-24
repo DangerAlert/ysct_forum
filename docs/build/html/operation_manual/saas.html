@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>基本介绍 &mdash; 长天机器学习平台介绍文档 1.0.0 文档</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/documentation_options.js?v=34088549"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="公司介绍" href="../head/head.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            长天机器学习平台介绍文档
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">公司介绍</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../head/head.html">公司介绍</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SaaS版操作手册</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">基本介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">使用方法</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">数据准备</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">任务配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">模型训练</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">模型查看</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">模型预测</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">长天机器学习平台介绍文档</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">基本介绍</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/operation_manual/saas.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>基本介绍<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<p>本工具实现了基于持续学习（Continental Machine Learning）的机器学习模型演化与持续服务的过程。在学界，持续学习指根据数据的变化自动进行机器学习的过程，并且解决数据变化带来的概念漂移、灾难性遗忘等问题。该过程要求机器学习过程中使用的特征工程方法、建模方法与参数调优策略可以被自动化执行，同时可以根据数据特征自动探索到表现更好的特征、模型与参数。这种自动化特性使得该工具可以作为快速验证机器学习场景可行性的工具。</p>
+<p>目前已经基于本工具提供了SaaS版平台服务，您可以观看以下视频学习如何创建你的第一个机器学习模型！</p>
+<p>【点击下图跳转】</p>
+<p><a class="reference external" href="https://www.bilibili.com/video/BV1W14y1B7i4"><img alt="B站：长天机器学习工具" src="../_images/2023-10-09-11-02-20-image.png" /></a></p>
+</section>
+<section id="id2">
+<h1>使用方法<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h1>
+<p>下面通过一个案例演示如何通过本平台建立机器学习任务。</p>
+<section id="id3">
+<h2>数据准备<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<p>为了用户方便理解，当前版本支持输入csv格式的数据文件，并且要求数据列分隔符为逗号，同时每个csv数据文件需要包含更新数据的表头。</p>
+<p>【HINT】在正式版中有多种数据输入形式，可以搭配特有数据存储增强数据吞吐性能。 当前平台为免费用户开放了数据表形式的结构化数据输入方式。数据表形式的序列、以及更多数据形式会在后续版本中陆续开放。</p>
+</section>
+<section id="id4">
+<h2>任务配置<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<p>登录平台后，点击页面右上方【新建自动化机器学习】按钮，弹出【新建任务】对话框。</p>
+<p><img alt="" src="../_images/2023-10-09-10-29-27-image.png" /></p>
+<p>首先将准备好的数据文件上传到平台，这里可以上传多个数据文件，并且它们的数据格式与数据字段必须相同。上传完毕之后点击【下一步】。</p>
+<p><img alt="" src="../_images/2023-10-09-10-29-45-image.png" /></p>
+<p>点击【下一步】，可以预览所上传的数据。</p>
+<p><img alt="" src="../_images/2023-10-09-10-30-02-image.png" /></p>
+<p>继续点击【下一步】，平台会自动解析文件中每个字段的类型。此时需要用户确认如下内容：</p>
+<p>⊖ 确认该数据集中需要拟合的字段，在对应字段的下拉列表中选择“标签”，默认情况下为“特征”。</p>
+<p>⊖ 确认该数据集中不需要用到的字段，在对应字段的下拉列表选择“忽略”。</p>
+<p>⊖ 确认标签和特征所对应的字段中属于非数值的类别特征字段，并将类别特征的字段设置为开启状态。</p>
+<p><img alt="" src="../_images/2023-10-09-10-30-19-image.png" /></p>
+<p>该案例中选择预测字段“churn”。点击【下一步】设置任务名称、自动化特征工程尝试次数、自动化机器学习尝试时间，备注等信息，然后点击【确定】则任务创建完毕。</p>
+<p><img alt="" src="../_images/2023-10-09-10-30-35-image.png" /></p>
+<p>【特征-问题类型】下拉选项中提供classification（分类）和regression（回归）两种机器学习任务类型的选择。如果标签为类别特征则是分类问题；如果标签为数值则是回归问题。本案例中选择“classification”。</p>
+<p>【特征-指标】下拉选项中提供了多种机器学习评判指标。如果当前解决的是分类问题则选择“roc_auc”和“log_loss”作为评判指标；如果当前解决的是回归问题则选择“rmse”作为判断指标。</p>
+<p>【HINT】一般而言，当log_loss取值小于0.693即表示模型有拟合能力，且越小越好；当roc_auc取值范围为0.5～1，越大越好，当大于0.7即表示模型有良好分辨能力。</p>
+<p>完成任务配置之后在【建模任务】列表中可以查看到所创建的任务。</p>
+<p><img alt="" src="../_images/2023-10-09-10-31-00-image.png" /></p>
+</section>
+<section id="id5">
+<h2>模型训练<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<p>在【建模任务】列表选择创建好的任务点击【运行】即可，整个建模过程都是全自动化的。</p>
+<p><img alt="" src="../_images/2023-10-09-10-31-15-image.png" /></p>
+<p>任务运行完毕之后会显示当前模型训练的最佳精度，可以看到这里的最佳精度大约为0.82，并且任务状态为SUCCESS。</p>
+<p><img alt="" src="../_images/2023-10-09-10-31-27-image.png" /></p>
+</section>
+<section id="id6">
+<h2>模型查看<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<p>在【建模任务】列表选择对应任务点击【日志】按钮可以查看相关整个持续学习过程中的自动化特征工程和自动化机器学习的相关细节。</p>
+<p><img alt="" src="../_images/2023-10-09-10-31-44-image.png" /></p>
+<p><img alt="" src="../_images/2023-10-09-10-32-02-image.png" /></p>
+<p>用户可以通过这些日志更好的了解机器学习模型演化与持续服务的过程。也可以点击【查看模型参数】查看模型相关参数。</p>
+<p><img alt="" src="../_images/2023-10-09-10-32-14-image.png" /></p>
+<p>另外用户还可以点击【验证集结果】查看该模型对上传数据文件中的数据所预测的结果。</p>
+<p><img alt="" src="../_images/2023-10-09-10-32-28-image.png" /></p>
+<p>在本案例中模型所预测的字段是“churn”这一列，这里所展示的“ypred”这一列为模型预测的结果。</p>
+</section>
+<section id="id7">
+<h2>模型预测<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<p>在【建模任务】列表选择对应任务点击【预测】可以进行模型预测。</p>
+<p>此时可以将需要预测的数据文件上传到平台，这里对上传数据文件的要求和“数据准备”环节是数据文件要求是一致的。</p>
+<p><img alt="" src="../_images/2023-10-09-10-33-04-image.png" /></p>
+<p>点击【上传并预测】，稍等片刻在【数据预览】中所展示的数据则是通过训练好的模型所预测的结果。</p>
+<p><img alt="" src="../_images/2023-10-09-10-33-17-image.png" /></p>
+<p>这里的“ypred”这一列就是模型预测的结果，可以点击【下载】将预测结果下载到本地。</p>
+<p>至此，通过该平台完成了一个分类任务自动化建模的整个过程的演示。同时该平台通过自动建模工具可以让用户都能够更加便捷，高效的建立机器学习模型并完成机器学习相关的工作。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../head/head.html" class="btn btn-neutral float-left" title="公司介绍" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, liyifan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
