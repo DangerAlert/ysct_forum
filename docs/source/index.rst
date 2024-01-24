@@ -18,11 +18,6 @@
    :caption: B站课程章节答疑
 
    course/course.md
-.. toctree::
-   :maxdepth: 3
-   :caption: B站课程章节答疑
-
-   course/course.md
 
 .. toctree::
    :maxdepth: 3
